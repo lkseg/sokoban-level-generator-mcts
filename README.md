@@ -9,7 +9,6 @@
 This project is a sokoban level generator based off of 
 *Data Driven Sokoban Puzzle Generation with Monte Carlo Tree Search* (https://ojs.aaai.org/index.php/AIIDE/article/view/12859, doi: https://doi.org/10.1609/aiide.v12i1.12859 ). 
 
-The algorithm in the paper uses *Monte Carlo Tree Search* for its level generation.
 
 The algorithm has been enhanced in many ways in this project.
 
