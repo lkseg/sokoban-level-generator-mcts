@@ -16,7 +16,7 @@ The level generator manages to produce multiple highly evaluated levels in a sho
 
 Third Party (see third_party_licenses):
 
-* Raylib is being used for the gui (./include, ./lib, ./raylib.dll).
+* Raylib v4.5 is being used for the gui (./include, ./lib, ./raylib.dll).
 * Kenney's assets for the textures (./textures)
 
 See settings.h
