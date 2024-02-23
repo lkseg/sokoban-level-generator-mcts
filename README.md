@@ -3,7 +3,9 @@
 - [Usage](#Usage)
 - [Controls](#Controls)
 
-![](/misc/generator_example.png)
+<!--- ![](/misc/generator_example.png =512x512) -->
+<img src="./misc/generator_example.png" alt="drawing" width="518"/>
+
 # Project
 
 This project is a sokoban level generator based off of 
