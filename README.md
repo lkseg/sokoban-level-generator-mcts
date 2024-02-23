@@ -11,9 +11,12 @@ This project is a sokoban level generator based off of
 
 The algorithm has been enhanced in many ways.
 
-The level generator manages to produce multiple high evaluated levels in a short amount of time. Very high results are already being produced at ~1s.
+The level generator manages to produce multiple highly evaluated levels in a short amount of time. Very high results are already being produced at ~1s.
 
-Raylib is being used for the gui.
+Third Party (see third_party_licenses):
+
+* Raylib is being used for the gui (include, lib).
+* Kenney's assets for the textures (textures)
 
 See settings.h
 
