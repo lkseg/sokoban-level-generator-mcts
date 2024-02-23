@@ -3,7 +3,7 @@
 - [Usage](#Usage)
 - [Controls](#Controls)
 
-
+![](/misc/generator_example.png)
 # Project
 
 This project is a sokoban level generator based off of 
@@ -19,7 +19,7 @@ Third Party (see third_party_licenses):
 * Raylib v4.5 is being used for the gui (./include, ./lib, ./raylib.dll).
 * Kenney's assets for the textures (./textures)
 
-See settings.h
+See _settings.h_ for adjusting the level generation (size, start position, cutoffs etc.)
 
 # Build
 SCons is being used for building the program.
