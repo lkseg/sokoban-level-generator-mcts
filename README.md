@@ -4,7 +4,7 @@
 - [Controls](#Controls)
 
 <!--- ![](/misc/generator_example.png =512x512) -->
-<img src="./misc/generator_example.png" alt="drawing" width="518"/>
+<img src="./misc/generator_example.png" alt="generator example image" width="518"/>
 
 # Project
 
