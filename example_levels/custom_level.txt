@@ -1,0 +1,9 @@
+
+LEVEL 7 7
+xxxxxxx
+x--p--x
+x-x---x
+x-----x
+x---x-x
+x-----x
+x-x---x
