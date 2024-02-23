@@ -16,12 +16,12 @@ The algorithm has been enhanced in many ways in this project.
 
 The level generator manages to produce multiple highly evaluated levels in a short amount of time. Very high results are already being produced at ~1s.
 
+See _settings.h_ for adjusting the level generation (size, start position, cutoffs etc.)
+
 Third Party (see third_party_licenses):
 
 * Raylib v4.5 is being used for the gui (./include, ./lib, ./raylib.dll).
 * Kenney's assets for the textures (./textures)
-
-See _settings.h_ for adjusting the level generation (size, start position, cutoffs etc.)
 
 # Build
 SCons is being used for building the program.
