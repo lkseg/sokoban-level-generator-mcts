@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 /*
-    This folder contains all general settings that are being used for random level generation.
+    This file contains all general settings that are being used for random level generation.
     Some of these settings are being ignored during experiments since they are a bit
     more specialized.
 
@@ -25,11 +25,11 @@
 // width != height is possible!
 #define DEFAULT_BOARD_SIZE {7,7}
 
-// set to {-1,*} for middle (default)
-// must be eiter {-1,*} or inside DEFAULT_BOARD_SIZE
+// Set to {-1,*} for middle (default).
+// Must be either {-1,*} or inside DEFAULT_BOARD_SIZE
 #define DEFAULT_START_POSITION {-1, 0} // {2, 3}
 
-// set to 0 if SIMULATION_COUNT should be used instead
+// Set to 0 if SIMULATION_COUNT should be used instead
 #define DEFAULT_TIMEOUT 10.0
 
 // If true will not only add new best levels but also levels whose score is >= GOOD_LEVEL_CUT.
@@ -37,40 +37,38 @@
 #define ADD_GOOD_LEVELS true
 // 1.3 is generally a decent value thanks to the area scaling
 #define GOOD_LEVEL_CUT 1.3
-// max amount of levels that will be usable at the end
+// Max amount of levels that will be usable at the end
 #define LEVEL_SET_SIZE 30
 // If true prints when a new good level is being added
 #define PRINT_NEW_LEVEL_INFO true
 
-// if it is set to 0 a random seed will be generated else it uses the seed
-#define DEFAULT_SEED 0 //
-// 3132326941, 3588037844,   3454533326
-// use the simple move action implementation (tile by tile) meant for experiments
+// If it is set to 0 a random seed will be generated else it uses the seed
+#define DEFAULT_SEED 0 
+// Use the simple move action implementation (tile by tile) meant for experiments
 #define USE_SIMPLE_MOVES false
 
-// enables bootstrapping
+// Enables bootstrapping
 #define MCTS_BOOTSTRAP false
-// how many levels should get added for bootstrapping
+// How many levels should get added for bootstrapping
 inline int32_t MCTS_BOOTSTRAP_COUNT = 4;
-// how much of the timeout should be spend for bootstrapping
+// How much of the timeout should be spend for bootstrapping
 inline double MCTS_BOOTSTRAP_DELTA = 0.05;
 
-// if set to true it uses the 5 example levels of the original paper and prints
-// out their scores for comparison
+// If set to true it uses the 5 example levels of the original paper and prints out their scores for comparison
 // see sokoban_example_levels
 #define USE_EXAMPLE_LEVELS false
 
-// enables usage of the arena allocator during default policy
+// Enables usage of the arena allocator during default policy
 #define ARENA_ALLOCATOR true
 
 
-// simulation count is being used if DEFAULT_TIMEOUT == 0
+// Simulation count is being used if DEFAULT_TIMEOUT == 0
 // Bootstrap does not work with this
 #define SIMULATION_COUNT 800000
 
 
 
-// activates removal of impossible configurations
+// Activates removal of impossible configurations
 #define REMOVE_IMPOSSIBLE true
 
 
@@ -113,16 +111,16 @@ constexpr double SQRT2 = 1.41421356237;
 inline double UCB1_C  = 2.0 * 1.0/SQRT2;
 inline double SP_MCTS_D =  SQRT2;
 
-// can be defined by hand or through an scons argument
-// this *heavily* slows down the program and thrashes the cache.
+// Can be defined by hand or through an scons argument
+// This *heavily* slows down the program
 #ifdef XTRACK
 #define TRACK_DATA true
 #else 
 #define TRACK_DATA false
 #endif // XTRACK
 
-// for ucb1-tuned, ucb-v we have to save the squared sum score
-// if we don't want to have the extra overhead for the other methods we can just remove this define
+// For ucb1-tuned, ucb-v we have to save the squared sum score
+// If we don't want to have the extra overhead for the other methods we can just remove this define
 #define USE_SQUARED_SUM
 
 
